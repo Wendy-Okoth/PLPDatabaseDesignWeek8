@@ -18,7 +18,7 @@ The SQL script includes tables with proper primary keys, foreign keys, constrain
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/Wendy-Okoth/hotel-management-system.git
+   git clone https://github.com/Wendy-Okoth/PLPDatabaseDesignWeek8.git
    
 2. Import the SQL file into your MySQL server:
    mysql -u yourusername -p < hotel_management.sql
