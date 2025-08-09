@@ -31,6 +31,8 @@ The SQL script includes tables with proper primary keys, foreign keys, constrain
 
 
 Entity-Relationship Diagram
+
+
 Below is a visual representation of the database schema showing entities and their relationships:
 <img width="814" height="1500" alt="hotelmanagement drawio" src="https://github.com/user-attachments/assets/22fd22c4-ff1e-46a3-ba29-b9629eda255d" />
 
