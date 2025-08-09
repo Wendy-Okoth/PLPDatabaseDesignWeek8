@@ -25,12 +25,13 @@ The SQL script includes tables with proper primary keys, foreign keys, constrain
 
 3. Alternatively, open your MySQL client and run the commands from hotel_management.sql manually.
 
-The script creates a database called hotel_db and all required tables with constraints.
+4. The script creates a database called hotel_db and all required tables with constraints.
 
-ERD (Entity-Relationship Diagram)
+5. Project Files - hotel_management.sql - Main SQL script file containing all CREATE TABLE statements and constraints, fully commented.
+
+
+Entity-Relationship Diagram
 Below is a visual representation of the database schema showing entities and their relationships:
 <img width="814" height="1500" alt="hotelmanagement drawio" src="https://github.com/user-attachments/assets/22fd22c4-ff1e-46a3-ba29-b9629eda255d" />
 
 
-Project Files
-hotel_management.sql - Main SQL script file containing all CREATE TABLE statements and constraints, fully commented.
