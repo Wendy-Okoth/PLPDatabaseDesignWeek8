@@ -29,6 +29,69 @@ The SQL script includes tables with proper primary keys, foreign keys, constrain
 
 5. Project Files - hotel_management.sql - Main SQL script file containing all CREATE TABLE statements and constraints, fully commented.
 
+Alternatively, open your MySQL client and run the commands from hotel_management.sql manually.
+
+The script creates a database called hotel_db and all required tables with constraints.
+
+## ERD Description
+
+### Entities:
+
+**Guests**
+
+- guest_id (PK)  
+- first_name  
+- last_name  
+- email  
+- phone  
+- address  
+
+**RoomTypes**
+
+- room_type_id (PK)  
+- type_name  
+- description  
+- price_per_night  
+
+**Rooms**
+
+- room_id (PK)  
+- room_number  
+- room_type_id (FK → RoomTypes.room_type_id)  
+- is_available  
+
+**Bookings**
+
+- booking_id (PK)  
+- guest_id (FK → Guests.guest_id)  
+- room_id (FK → Rooms.room_id)  
+- check_in  
+- check_out  
+- number_of_guests  
+- booking_date  
+- status  
+
+**Services**
+
+- service_id (PK)  
+- service_name  
+- description  
+- price  
+
+**BookingServices** (Join table for many-to-many between Bookings and Services)
+
+- booking_id (FK → Bookings.booking_id)  
+- service_id (FK → Services.service_id)  
+- quantity  
+
+### Relationships:
+
+- Guests (1) → (M) Bookings  
+- RoomTypes (1) → (M) Rooms  
+- Rooms (1) → (M) Bookings  
+- Bookings (M) → (M) Services (through BookingServices)
+
+
 
 Entity-Relationship Diagram
 
